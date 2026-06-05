@@ -37,6 +37,132 @@ modules:
   - name: s3backups
     description: "Backup your world to Amazon S3 storage on a schedule."
     version: "1.0.0"
-    author: "Volte6"
+    author: "GoMud" # Provided by GoMud team
     url: "https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/s3backups.tar.gz"
     sha256: "63612d4fa2011654fc561174f86c09900c7da7f94b233ae1a9869c5a658ee831"
+
+  - name: alt-characters
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Allows players to maintain multiple characters per account. Adds the 'character' command and an admin config page for managing slot limits and rules."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/alt-characters.tar.gz
+    sha256: da3f1cca3a3a8a04724ef8ad6fb23e49a944a56c8503ac9b0ba146ec3d58237e
+
+  - name: auctions
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Player-run auction system for buying and selling items server-wide. Tracks active and past auctions with bid history."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/auctions.tar.gz
+    sha256: b454f2f81d3fa3678d8fab97631fb67f3d56f3359b237a82c66c8fd5d6ecc3cc
+
+  - name: automission
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Procedurally generated mission boards that assign kill, find, explore, and escort objectives to players. Missions are configured via room tags and reward players on completion."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/automission.tar.gz
+    sha256: 021a451c1d0700dffab2af3fc656e39d9ede6f6cb54cb2f8796d34f2ed2c512b
+
+  - name: cleanup
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Automated world cleanup that removes stale corpses, dropped items, and temporary objects on a configurable schedule. Adds 'trash' and 'bury' commands for players and mobs."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/cleanup.tar.gz
+    sha256: 88c44a61afd1e85585b978e8b9d0a68be068e5c59ebffd492bf286e57e917554
+
+  - name: clibridge
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Exposes a PTY-backed command-line interface accessible from within the game client. Allows external tool integration via the 'cli' command with admin-configurable routing."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/clibridge.tar.gz
+    sha256: 4c6adeef2d81e1c208ccb6caa58a0c61946b6f28d473cdb2e475a26bd1c759ff
+
+  - name: elections
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Player-run political system enabling zone governance through campaigns and voting. Elected officials gain access to restricted areas and zone coffers. Configurable via room tags."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/elections.tar.gz
+    sha256: e80ce0990bc26a0e77c3d381f7ef98d30fba6224b4f59770aa6f8982d2143fc8
+
+  - name: fasttravel
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Waypoint-based fast travel system. Players unlock destinations by visiting rooms tagged 'fast travel' and can teleport between them using the 'fasttravel' command."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/fasttravel.tar.gz
+    sha256: 7b827e6085427fdc61d2d52838097126a99c3677a18ce1cc124e379c0dc3674b
+
+  - name: fishing
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Turn-based fishing minigame with configurable catch tables, a fishing stat modifier, and admin API for managing fish loot pools."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/fishing.tar.gz
+    sha256: 172e738b3028ef409a058131a657415bd5901cf1612a0942f8931954b9f5891d
+
+  - name: follow
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Allows players and NPCs to follow another character through room transitions. Supports configurable follow distances and integrates with the party system."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/follow.tar.gz
+    sha256: a86b1d501f6f4537f5e6c5c410cea9ac1d84515e273be5b14926a071bccfabe5
+
+  - name: gambling
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Casino-style gambling games including slot machines and a claw machine. Activated by room tags ('slots', 'slot machine', 'claw machine') and includes a persistent jackpot."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/gambling.tar.gz
+    sha256: ba570fe699d976a4cf1bdc5656fa0aa78e741cd0f842ac3f99204304ee997123
+
+  - name: gmcp
+    version: "1.1"
+    author: "GoMud" # Provided by GoMud team
+    description: "Full GMCP (Generic Mud Communication Protocol) implementation for telnet and web clients. Provides Char, Room, World, Comm, Party, Game, Gametime, Help, Suggestion, and Mudlet namespaces."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/gmcp.tar.gz
+    sha256: be47f942bc96ba90616834a827018e56e929c61084f5bfba4d6196890e4e7c5a
+
+  - name: leaderboards
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Tracks and displays top player rankings across configurable categories. Exposes a public web leaderboards page and an in-game 'leaderboard' command."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/leaderboards.tar.gz
+    sha256: ce0910edec3aa5f899bd50b5760291409db8c70c9988983ea9d5b71af1453c57
+
+  - name: mudmail
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "In-game mail system allowing players to send messages, gold, and items to each other. Includes 'inbox' and 'mudmail' commands and an admin UI for browsing and managing mail."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/mudmail.tar.gz
+    sha256: c5e05c753d4845670b62df6864f296572d59515070f6402785018afb7b924c91
+
+  - name: newbieguide
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Spawns a guide NPC that walks new players through their first steps. The guide follows the player until they reach a configurable maximum level."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/newbieguide.tar.gz
+    sha256: c5d69b2b58f993b32328317e8e6cd5dca95da49fe498cf7d40e8ae49eaf466eb
+
+  - name: storage
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Persistent per-player item stash accessible at rooms tagged 'storage'. Adds the 'storage' command and an admin UI for browsing and managing player storage contents."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/storage.tar.gz
+    sha256: 71fca41fb1db0d35543bb86e5ad2dd87e3bd19c19dcd7714927e05b70b5b577b
+
+  - name: time
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Adds a 'time' command that displays the current in-game date, time, and calendar information to players."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/time.tar.gz
+    sha256: 39632b6e65c5d199e93b974eec1959e34c0f61122b522cd009a73d9f7d576210
+
+  - name: webhelp
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "Publishes in-game help topics as browsable public web pages at /help and /help-details, making command documentation accessible outside the game client."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/webhelp.tar.gz
+    sha256: 78f93ea1058cc36748b3fbb1624273734a6670f2629e94196bd22a966460c7ac
+
+  - name: zombiemode
+    version: "1.0"
+    author: "GoMud" # Provided by GoMud team
+    description: "AFK automation system that keeps idle characters active. Players configure combat targets, loot rules, roam radius, rest thresholds, and waypoints via the 'zombie' command."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/zombiemode.tar.gz
+    sha256: d2f9d06f31d64eb08fe56074cb2e3251af8d280c18be1283e1b6bd14a1a48da3
