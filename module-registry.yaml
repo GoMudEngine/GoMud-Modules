@@ -1,0 +1,42 @@
+# GoMud Community Module Registry
+#
+# This file is the authoritative list of community modules available for
+# GoMud servers. It is fetched at runtime by:
+#
+#   go run ./cmd/modmanager list
+#
+# To submit a new module or update an existing one, open a pull request
+# against this file. All entries are reviewed before merging.
+#
+# Field reference:
+#   name        - directory name created under modules/ (lowercase, hyphens ok)
+#   description - one-line description shown in the module list
+#   version     - semver string; bump this when publishing a new archive
+#   author      - module author or organisation name
+#   url         - direct download URL for the .tar.gz or .zip source archive
+#   sha256      - SHA256 hex digest of the file at `url`; used to verify integrity
+#
+# Archive layout requirements:
+#   The archive must contain Go source files at the top level (or inside a
+#   single wrapper directory that will be stripped). At minimum:
+#
+#     <module-name>.go       <- package declaration and init() registration
+#     files/                 <- optional: embedded data files (go:embed files/*)
+#       datafiles/...
+#       data-overlays/...
+#
+#   The package name in the .go files must be a valid Go identifier.
+#   The module imports GoMud internals as:
+#     github.com/GoMudEngine/GoMud/internal/<package>
+#
+# Generating a SHA256:
+#   Linux/macOS:  sha256sum your-module-1.0.0.tar.gz
+#   Windows:      Get-FileHash your-module-1.0.0.zip -Algorithm SHA256
+
+modules:
+  - name: s3backups
+    description: "Backup your world to Amazon S3 storage on a schedule."
+    version: "1.0.0"
+    author: "Volte6"
+    url: "https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/s3backups.tar.gz"
+    sha256: "63612d4fa2011654fc561174f86c09900c7da7f94b233ae1a9869c5a658ee831"
