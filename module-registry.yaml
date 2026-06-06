@@ -166,3 +166,18 @@ modules:
     description: "AFK automation system that keeps idle characters active. Players configure combat targets, loot rules, roam radius, rest thresholds, and waypoints via the 'zombie' command."
     url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/zombiemode.tar.gz
     sha256: d2f9d06f31d64eb08fe56074cb2e3251af8d280c18be1283e1b6bd14a1a48da3
+
+  - name: playtest
+    description: >-
+      AI playtest harness — per-round Playtest.Round GMCP beacons, structural
+      safe-mode confinement, and death protection for any client on the AI port,
+      for structured goal verification. No account provisioning: the AI agent logs
+      in or creates a character via the normal new-player flow. Requires a GoMud
+      with the AI-port primitives and the bundled gmcp module (for beacons). Pairs
+      with the mudagent adapter + tester-personality framework at
+      github.com/GoMudEngine/GoMud-Module-Playtest-Harness.
+    version: 0.1.1
+    author: pruuk
+    url: https://github.com/GoMudEngine/GoMud-Module-Playtest-Harness/releases/download/v0.1.1/playtest.tar.gz
+    sha256: ddd5c625f06b044ed802f17cf87f73e3ff7621b8e60362a2d47dbaabf9b4153a
+    
