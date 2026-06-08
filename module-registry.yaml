@@ -178,6 +178,6 @@ modules:
       github.com/GoMudEngine/GoMud-Module-Playtest-Harness.
     version: 0.1.2
     author: pruuk
-    url: …/releases/download/v0.1.1/playtest.tar.gz → …/v0.1.2/playtest.tar.gz
-    sha256: ddd5c625… → sha256: 8b9502da19221ff8365bd86c6efc0f90547ba8bd08f8a19a4ad3d3d13141ee12
+    url: https://github.com/GoMudEngine/GoMud-Module-Playtest-Harness/releases/download/v0.1.2/playtest.tar.gz
+    sha256: 8b9502da19221ff8365bd86c6efc0f90547ba8bd08f8a19a4ad3d3d13141ee12
     
