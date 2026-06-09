@@ -3,7 +3,7 @@
 # This file is the authoritative list of community modules available for
 # GoMud servers. It is fetched at runtime by:
 #
-#   go run ./cmd/modmanager list
+#   make module
 #
 # To submit a new module or update an existing one, open a pull request
 # against this file. All entries are reviewed before merging.
@@ -42,11 +42,11 @@ modules:
     sha256: "63612d4fa2011654fc561174f86c09900c7da7f94b233ae1a9869c5a658ee831"
 
   - name: alt-characters
-    version: "1.0"
+    version: "1.1"
     author: "GoMud" # Provided by GoMud team
     description: "Allows players to maintain multiple characters per account. Adds the 'character' command and an admin config page for managing slot limits and rules."
     url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/alt-characters.tar.gz
-    sha256: da3f1cca3a3a8a04724ef8ad6fb23e49a944a56c8503ac9b0ba146ec3d58237e
+    sha256: 83f666fbf8aef5f8f4ad44089272ab14821d56c216278fd9f2230fc9d4d18f7c
 
   - name: auctions
     version: "1.0"
