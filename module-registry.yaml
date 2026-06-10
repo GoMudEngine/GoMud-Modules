@@ -109,7 +109,7 @@ modules:
     author: "GoMud" # Provided by GoMud team
     description: "Casino-style gambling games including slot machines and a claw machine. Activated by room tags ('slots', 'slot machine', 'claw machine') and includes a persistent jackpot."
     url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/gambling.tar.gz
-    sha256: ba570fe699d976a4cf1bdc5656fa0aa78e741cd0f842ac3f99204304ee997123
+    sha256: 531df0830837b495c2cbcdb33da5be82083cc1130b19f273ee47df859d6388da
 
   - name: gmcp
     version: "1.1"
