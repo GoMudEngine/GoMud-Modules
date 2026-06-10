@@ -181,3 +181,20 @@ modules:
     url: https://github.com/GoMudEngine/GoMud-Module-Playtest-Harness/releases/download/v0.1.2/playtest.tar.gz
     sha256: 8b9502da19221ff8365bd86c6efc0f90547ba8bd08f8a19a4ad3d3d13141ee12
     
+  - name: weather
+    description: >-
+      Traveling weather systems for any GoMud world. Discrete fronts move
+      across a zone-adjacency graph crawled from your world's room exits,
+      strengthen or die based on the biomes they cross, and render through
+      standard room mutators (name tags, descriptions, alerts, light, optional
+      buffs) plus indoor/outdoor-aware ambient emotes. Deterministic seeded
+      simulation; state persists across reboots; works on a stock world with
+      zero data authoring, and all prose/climate/mechanics are
+      builder-overridable YAML. Player 'weather' command plus admin
+      spawn/clear/inspect tools and an exported API for other modules. Docs at
+      github.com/GoMudEngine/GoMud-Module-Weather.
+    version: 0.1.0
+    author: pruuk
+    url: https://github.com/GoMudEngine/GoMud-Module-Weather/releases/download/v0.1.0/weather.tar.gz
+    sha256: 24330118bb6c661ae80fb0f63137825116f9f8f53cf60c2f7771f9d8bae233e4
+    
