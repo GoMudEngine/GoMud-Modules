@@ -1,0 +1,7 @@
+modules:
+  - name: alt-characters
+    version: "1.1"
+    author: "GoMud" # Provided by GoMud team
+    description: "Allows players to maintain multiple characters per account. Adds the 'character' command and an admin config page for managing slot limits and rules."
+    url: https://github.com/GoMudEngine/GoMud-Modules/raw/refs/heads/master/official-modules/alt-characters.tar.gz
+    sha256: 83f666fbf8aef5f8f4ad44089272ab14821d56c216278fd9f2230fc9d4d18f7c
