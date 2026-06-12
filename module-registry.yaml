@@ -183,18 +183,20 @@ modules:
     
   - name: weather
     description: >-
-      Traveling weather systems for any GoMud world. Discrete fronts move
-      across a zone-adjacency graph crawled from your world's room exits,
-      strengthen or die based on the biomes they cross, and render through
-      standard room mutators (name tags, descriptions, alerts, light, optional
-      buffs) plus indoor/outdoor-aware ambient emotes. Deterministic seeded
-      simulation; state persists across reboots; works on a stock world with
-      zero data authoring, and all prose/climate/mechanics are
-      builder-overridable YAML. Player 'weather' command plus admin
-      spawn/clear/inspect tools and an exported API for other modules. Docs at
+      Traveling weather systems and seasons for any GoMud world. Discrete
+      fronts move across a zone-adjacency graph crawled from your world's room
+      exits, strengthen or die based on the biomes they cross, and render
+      per-room (indoor rooms shelter from the storm) through standard room
+      mutators plus indoor/outdoor-aware ambient emotes. Per-biome season
+      tracks (temperate, monsoon, or fully custom/esoteric) reshape the
+      climate through the year. Deterministic seeded simulation; state
+      persists across reboots; works on a stock world with zero data
+      authoring, and all prose/climate/season mechanics are
+      builder-overridable YAML. Player 'weather' command, a web admin page (config, live fronts,
+      spawn/clear), and an exported API for other modules. Docs at
       github.com/GoMudEngine/GoMud-Module-Weather.
-    version: 0.1.0
+    version: 0.2.0
     author: pruuk
-    url: https://github.com/GoMudEngine/GoMud-Module-Weather/releases/download/v0.1.0/weather.tar.gz
-    sha256: 24330118bb6c661ae80fb0f63137825116f9f8f53cf60c2f7771f9d8bae233e4
+    url: https://github.com/GoMudEngine/GoMud-Module-Weather/releases/download/v0.2.0/weather.tar.gz
+    sha256: 67ee23db2a5b947b1d5ceb69378dec0b6fc77d992ac22e48ef902293553ae1f6
     
